@@ -1,0 +1,158 @@
+/* General */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Header */
+.hero {
+  background: linear-gradient(135deg, #772020, #2d0505);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-family: 'Georgia', serif;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+  margin: 20px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #FFD700;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+/* Buttons */
+button {
+  background-color: #901818;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #8B0000;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Cards */
+.poem, .card {
+  background-color: #F5F5F5; /* ash */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.poem:hover, .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+footer {
+  background: linear-gradient(135deg, #772020, #2d0505);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ---------------- MOBILE VIEW ---------------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar a {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+    padding: 20px;
+  }
+
+  .poem, .card {
+    font-size: 0.95em;
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.6em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+
+  .navbar a {
+    font-size: 0.9em;
+  }
+
+  .poem, .card {
+    font-size: 0.9em;
+  }
+}

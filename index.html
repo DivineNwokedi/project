@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine Poems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Happy Valentine, watashi no ai</h1>
+    <p>10 heartfelt poems written just for you.</p>
+    <nav class="navbar">
+      <a href="index.html" class="active">Poems</a>
+      <a href="facts.html">Interesting Facts</a>
+    </nav>
+    <button onclick="showRandomPoem()">Surprise Me</button>
+  </header>
+
+  <main id="poem-container" class="grid">
+    <div class="poem">
+      <p>I have not yet held your hand,<br>
+      Nor walked with you across the sand.<br>
+      But in my heart, you’re already near,<br>
+      A gentle voice I long to hear.</p>
+    </div>
+
+    <div class="poem">
+      <p>I dream of you in quiet nights,<br>
+      A star that shines with endless light.<br>
+      Though I have not yet seen your face,<br>
+      I feel your warmth, your gentle grace.</p>
+    </div>
+
+    <div class="poem">
+      <p>We stand apart, two souls unknown,<br>
+      Yet love has found a way to grow.<br>
+      No stories shared, no past to bind,<br>
+      But still you linger in my mind.</p>
+    </div>
+
+    <div class="poem">
+      <p>I do not know the path you take,<br>
+      Or how your mornings gently wake.<br>
+      But still I feel you close to me,<br>
+      A love that waits patiently.</p>
+    </div>
+
+    <div class="poem">
+      <p>I write to you with hope and care,<br>
+      Though I don’t know the clothes you wear.<br>
+      I’ve never seen your gentle eyes,<br>
+      But still I dream beneath the skies.</p>
+    </div>
+
+    <div class="poem">
+      <p>I wonder how your laughter feels,<br>
+      What stories all your silence seals.<br>
+      Though I have not yet heard your voice,<br>
+      My heart has made its tender choice.</p>
+    </div>
+
+    <div class="poem">
+      <p>I’ve never touched your gentle hand,<br>
+      Or walked with you across the land.<br>
+      But still I feel your spirit near,<br>
+      A quiet love that’s crystal clear.</p>
+    </div>
+
+    <div class="poem">
+      <p>I do not know the sound you make,<br>
+      Or how your mornings softly wake.<br>
+      But still I dream of you each night,<br>
+      A gentle flame, a guiding light.</p>
+    </div>
+
+    <div class="poem">
+      <p>I wonder where your footsteps fall,<br>
+      What dreams you chase, what hopes you call.<br>
+      Though I have not yet seen your face,<br>
+      I feel your warmth, your gentle grace.</p>
+    </div>
+
+    <div class="poem">
+      <p>I’ve never heard your gentle tone,<br>
+      Or walked with you when day is done.<br>
+      But still I feel you close to me,<br>
+      A love that waits patiently.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Forever yours, Nwokedi</p>
+  </footer>
+
+  <script>
+    function showRandomPoem() {
+      const poems = document.querySelectorAll(".poem p");
+      const randomIndex = Math.floor(Math.random() * poems.length);
+      alert("Random Poem:\n\n" + poems[randomIndex].innerText);
+    }
+  </script>
+</body>
+</html>
