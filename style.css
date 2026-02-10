@@ -99,7 +99,6 @@ footer {
   .grid {
     grid-template-columns: 1fr; /* force single column */
     padding: 20px;
-    max-width: 600px; /* prevent zoomed-out look */
   }
 
   .poem, .card {
