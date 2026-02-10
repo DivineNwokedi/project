@@ -96,9 +96,9 @@ footer {
 
 /* ---------------- MOBILE VIEW ---------------- */
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr; /* force single column */
-    padding: 20px;
+  /* Show hamburger icon */
+  .menu-toggle {
+    display: flex;
   }
 
   .poem, .card {
@@ -158,3 +158,4 @@ footer {
     max-width: 100%; /* full width on very small screens */
   }
 }
+
