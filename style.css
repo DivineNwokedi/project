@@ -189,7 +189,7 @@ footer {
 }
 
 /* Responsive design for mobile */
-@media (max-width: 600px) {
+@media (max-width: 200px) {
   .card {
     padding: 15px;
   }
