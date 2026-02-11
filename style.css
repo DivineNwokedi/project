@@ -159,7 +159,7 @@ footer {
   }
 }
 
-/* Video card styling */
+/* Card wrapper */
 .video-card {
   display: flex;
   justify-content: center;
@@ -167,31 +167,36 @@ footer {
 }
 
 .card {
-  background: #d8d5d5;
+  background: #cdc8c8;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 20px;
-  max-width: 700px;
+  padding: 15px;
+  max-width: 400px;   /* smaller max width */
   width: 100%;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .card h2 {
-  margin-bottom: 15px;
-  color: #560f0f;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #561007;
 }
 
+/* Video inside card */
 .card video {
-  width: 100%;
+  width: 100%;        /* always fit inside card */
+  max-width: 100%;    /* prevent overflow */
   height: auto;
   border-radius: 8px;
+  display: block;
 }
 
-/* Responsive design for mobile */
+/* Mobile adjustments */
 @media (max-width: 600px) {
   .card {
-    padding: 12px;
-    max-width: 95%; /* keeps it narrower on small screens */
+    max-width: 300px;   /* even smaller on phones */
+    padding: 10px;
   }
 
   .card h2 {
@@ -199,7 +204,6 @@ footer {
   }
 
   .card video {
-    max-height: 200px; /* limits video height */
-    width: 100%;
+    max-height: 150px;  /* cap video height */
   }
 }
