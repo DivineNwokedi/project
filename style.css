@@ -159,7 +159,7 @@ footer {
   }
 }
 
-/* Card styling */
+/* Video card styling */
 .video-card {
   display: flex;
   justify-content: center;
@@ -167,38 +167,39 @@ footer {
 }
 
 .card {
-  background: #d3d1d1;
+  background: #d8d5d5;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: px;
+  padding: 20px;
   max-width: 700px;
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 
 .card h2 {
   margin-bottom: 15px;
-  color: #4a0b0b; /* Valentine pink/red */
+  color: #560f0f;
 }
 
-/* Video styling */
 .card video {
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
 /* Responsive design for mobile */
-@media (max-width: 200px) {
+@media (max-width: 600px) {
   .card {
-    padding: 15px;
+    padding: 12px;
+    max-width: 95%; /* keeps it narrower on small screens */
   }
 
   .card h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .card video {
-    max-height: 250px;
+    max-height: 200px; /* limits video height */
+    width: 100%;
   }
 }
